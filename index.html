@@ -3,18 +3,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="style.scss">
     <title>Morse Code Translator</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="morse-translator__title">English to Morse Code Translator</h1>
-        <label class="morse-translator__input-label" for="morse-input">Enter English text to translate: </label>
-        <input class="morse-translator__input" type="text" name="morse-input">
+        <div class="morse-translator">
+            <h1 class="morse-translator__title" id="engToMorse">English to Morse Code Translator</h1>
+            <label class="morse-translator__input-label" for="eng-input">Enter English text to translate: </label>
+            <input type="text" name="eng-input" class="morse-translator__input-field">
+            <button class="morse-translator__submit">Submit</button> 
 
-        <br>
-        
-        <label class="morse-translator__output-label" for="morse-output">Morse Translation:</label>
-        <div class="morse-translator__output" name="morse-output"></div>
+            <br>
+
+            <label class="morse-translator__output-label" for="morse-output">Morse Translation:</label>
+            <div class="morse-translator__output" name="morse-output"></div>
+        </div>
+
+        <div class="morse-translator">
+            <h1 class="morse-translator__title" id="morseToEng">Morse Code to English Translator</h1>
+            <label class="morse-translator__input-label" for="morse-input">Enter Morse code to translate: </label>
+            <input type="text" name="morse-input" class="morse-translator__input-field">
+            <button class="morse-translator__submit">Submit</button> 
+
+            <br>
+
+            <label class="morse-translator__output-label" for="eng-output">English Translation:</label>
+            <div class="morse-translator__output" name="eng-output"></div>
+        </div>
     </div>
     
 </body>
