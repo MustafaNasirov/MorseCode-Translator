@@ -7,7 +7,7 @@
 .container .morse-translator {
   padding-bottom: 10rem;
 }
-.container .morse-translator .morse-translator__output {
+.container .morse-translator #showMorse {
   font-size: 4rem;
   font-weight: 400;
   display: inline;
